@@ -1,4 +1,4 @@
-import initAccordion from './modules/accordion.js';
+import Accordion from './modules/accordion.js';
 import initAnimacaoScroll from './modules/scroll-animacao.js';
 import ScrollSuave from './modules/scroll-suave.js';
 import initTabNav from './modules/tabnav.js';
@@ -10,7 +10,9 @@ import initFuncionamento from './modules/funcionamento.js';
 import initFetchAnimais from './modules/fetch-animais.js';
 import initFetchBitcoin from './modules/fetch-bitcoin.js';
 
-initAccordion();
+const accordion = new Accordion('[data-anime="accordion"] dt');
+accordion.init();
+
 initModal();
 initAnimacaoScroll();
 
